@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">CodeChallenge8</string>
+    <string name="textlp1">Bermain suit melawan sesama pemain</string>
+    <string name="textlp2">Bermain suit melawan komputer</string>
+    <string name="textlp3">Persiapkan Dirimu!</string>
+    <string name="next">Next</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="akun">Belum punya akun? Daftar</string>
+    <string name="here">di sini</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="menu">Menu</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+    <string name="lawan">PILIH LAWANMU</string>
+    <string name="batu">Batu</string>
+    <string name="kertas">Kertas</string>
+    <string name="gunting">Gunting</string>
+    <string name="vs">VS</string>
+    <string name="save">Simpan</string>
+    <string name="save_battle_title">SAVE BATTLE</string>
+    <string name="save_battle">Save Battle</string>
+    <string name="data_empty">Data Masih Kosong</string>
+    <string name="history_battle">HISTORY BATTLE</string>
+    <string name="image">Image</string>
+    <string name="update_user">Update User</string>
+    <string name="logout">Keluar Aplikasi</string>
+    <string name="logouts">Logout</string>
+</resources>

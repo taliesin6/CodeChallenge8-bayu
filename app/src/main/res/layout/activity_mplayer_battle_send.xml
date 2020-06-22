@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.battle.MplayerBattleSend">
+
+    <ImageView
+        android:id="@+id/iv_back_send"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/batu"
+        android:rotation="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+
+    <TextView
+        android:id="@+id/tv_multiplayer_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multi\nPlayer"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_gunting_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_batu_send"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/batu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/batu" />
+
+    <ImageView
+        android:id="@+id/iv_gunting_send"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="30dp"
+        android:contentDescription="@string/batu"
+        app:layout_constraintBottom_toTopOf="@id/iv_batu_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/gunting" />
+
+    <ImageView
+        android:id="@+id/iv_kertas_send"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="30dp"
+        android:contentDescription="@string/batu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_batu_send"
+        app:srcCompat="@drawable/kertas" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

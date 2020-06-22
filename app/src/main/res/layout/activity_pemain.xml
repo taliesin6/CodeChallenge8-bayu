@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.game.PemainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_pemain_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:theme="@style/ToolbarTheme"/>
+
+    <ImageView
+        android:id="@+id/image_title"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:srcCompat="@drawable/title"
+        android:contentDescription="@string/image" />
+
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/vs"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:minLines="2"
+        android:gravity="center"
+        android:padding="2dp"
+        android:background="@drawable/bg_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_title" />
+
+    <ImageView
+        android:id="@+id/pemain_satu"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_title"
+        app:srcCompat="@drawable/pemains1title"
+        android:contentDescription="@string/image" />
+
+    <ImageView
+        android:id="@+id/pemain_dua"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_title"
+        app:srcCompat="@drawable/pemains2title"
+        android:contentDescription="@string/image" />
+
+    <ImageView
+        android:id="@+id/iv_batu1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/batu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pemain_satu"
+        app:srcCompat="@drawable/batu"/>
+
+    <ImageView
+        android:id="@+id/iv_batu2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="64dp"
+        android:contentDescription="@string/batu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pemain_dua"
+        app:srcCompat="@drawable/batu"/>
+
+    <ImageView
+        android:id="@+id/iv_kertas1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/kertas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_batu1"
+        app:srcCompat="@drawable/kertas"/>
+
+    <ImageView
+        android:id="@+id/iv_kertas2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="64dp"
+        android:contentDescription="@string/kertas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_batu2"
+        app:srcCompat="@drawable/kertas"/>
+
+    <ImageView
+        android:id="@+id/iv_gunting1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/gunting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_kertas1"
+        app:srcCompat="@drawable/gunting"/>
+
+    <ImageView
+        android:id="@+id/iv_gunting2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="64dp"
+        android:contentDescription="@string/gunting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_kertas2"
+        app:srcCompat="@drawable/gunting"/>
+
+    <ImageView
+        android:id="@+id/btn_favourite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_gunting1"
+        app:layout_constraintStart_toStartOf="@+id/iv_gunting1"
+        app:layout_constraintTop_toBottomOf="@+id/iv_gunting1"
+        app:srcCompat="@drawable/ic_favorite_border_black_24dp"
+        android:contentDescription="@string/image" />
+
+    <ImageView
+        android:id="@+id/btn_reset"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_gunting2"
+        app:layout_constraintStart_toStartOf="@+id/iv_gunting2"
+        app:layout_constraintTop_toBottomOf="@+id/iv_gunting2"
+        app:srcCompat="@drawable/twotone_repeat_black_24"
+        android:contentDescription="@string/image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

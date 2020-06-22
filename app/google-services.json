@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "306735157980",
+    "firebase_url": "https://codechallenge9-f3ed5.firebaseio.com",
+    "project_id": "codechallenge9-f3ed5",
+    "storage_bucket": "codechallenge9-f3ed5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306735157980:android:54f06c27fa88b09b2fda19",
+        "android_client_info": {
+          "package_name": "com.example.codechallenge8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306735157980-tjqurhdm0llbkijq9a3ga6ihd3qko0oo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFfkEICRIA7kTUsO0uiOpkXkoVnupObZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306735157980-tjqurhdm0llbkijq9a3ga6ihd3qko0oo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
