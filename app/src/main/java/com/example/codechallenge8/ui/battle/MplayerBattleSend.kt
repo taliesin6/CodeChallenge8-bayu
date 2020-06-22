@@ -25,15 +25,39 @@ class MplayerBattleSend : AppCompatActivity() {
         //TODO masukin pilihan ke match sesuai dengan idPlayernya
 
         iv_batu_send.setOnClickListener {
-           // savePilihan()
+
+            val playerId = "Test"
+            val player1Choice = "None"
+            val player2Choice = "Batu"
+            val matchName = "TestMatch"
+            val winner = "None"
+
+            val match = Match(playerId, player1Choice, player2Choice, matchName , winner)
+            savePilihan(match)
         }
 
         iv_gunting_send.setOnClickListener {
-           // savePilihan()
+
+            val playerId = "Test"
+            val player1Choice = "None"
+            val player2Choice = "Gunting"
+            val matchName = "TestMatch"
+            val winner = "None"
+
+            val match = Match(playerId, player1Choice, player2Choice, matchName , winner)
+            savePilihan(match)
         }
 
         iv_kertas_send.setOnClickListener {
-           // savePilihan()
+
+            val playerId = "Test"
+            val player1Choice = "None"
+            val player2Choice = "Kertas"
+            val matchName = "TestMatch"
+            val winner = "None"
+
+            val match = Match(playerId, player1Choice, player2Choice, matchName , winner)
+            savePilihan(match)
         }
 
 
